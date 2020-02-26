@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <title>setInterval and clearInterval</title>
+
+</head>
+
+<body>
+	<div><span id="hours">00</span>:<span id="minutes">00</span>:<span id="seconds">00</span></div>
+	
+    <input id="startButton" type="button" value="Start" />
+	<input id="stopButton" type="button" value="Stop" />
+	<input id="resetButton" type="button" value="Reset" />
+
+    <script>
+
+		let seconds = 1, intervalHandler;
+		let minutes = 1;
+		let hours = 0;
+
+		function secTimer() {
+			const get = (id) => document.getElementById(id);
+
+			const count = () => {
+				
+				get("seconds").innerHTML = '0' + seconds;
+					seconds++;
+
+					if (seconds > 4) {
+						seconds = 0;
+						
+						
+						get("minutes").innerHTML = '0' + minutes++;
+						
+
+
+						
+					};
+
+				if (minutes > 3) {
+					minutes = -1;
+					
+					
+								
+					get("hours").innerHTML = '0' + hours;
+					hours++;
+				};
+
+
+			};
+			
+			get("startButton").onclick = () => {
+            	intervalHandler = setInterval(count, 1000);
+			}
+			
+			get("stopButton").onclick = () => {
+				// останавливаем таймер, по которому вызывается функция count
+				clearInterval(intervalHandler);
+			}
+
+			get("resetButton").onclick = () => {
+				seconds = '00';
+				minutes = '00';
+				hours = '00';
+				get("seconds").innerHTML = seconds;
+				get("minutes").innerHTML = minutes;
+				get("hours").innerHTML = hours;
+
+				// останавливаем таймер, по которому вызывается функция count
+				clearInterval(intervalHandler);
+			}
+		};
+		   
+		secTimer();
+
+
+
+
+    
+
+        // пользовательская функция для получения элементов страницы по id
+
+
+        
+ 
+
+    </script>
+      <!--Используя интервалы, onclick и getElementById(); Создйте приложение секундомер.
+Пример
+00:00:00
+
+3 кнопки. Старт, пауза , стоп.-->
+</body>
+
+</html>
