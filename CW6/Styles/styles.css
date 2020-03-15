@@ -73,3 +73,8 @@ li:hover {
 .ingridients div img {
     height: 100px;
 }
+
+.price {
+    margin: 50px 0;
+    text-align: center;
+}

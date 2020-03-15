@@ -37,21 +37,34 @@
         <h1>Збери піццу своєї мрії</h1>
         <div class="table-wrapper">
             <div class="table">
-                <img src="Pizza_pictures/klassicheskij-bortik_1556622914630.png" alt="Корж класичний">
+                <div class="size-selection">
+                    <input class="size" data-info="50" type="radio" id="sizeChoice1" name="size" value="small">
+                        <label for="contactChoice1">Маленька</label>
+                    <input class="size" data-info="75" type="radio" id="sizeChoice2" name="size" value="middle">
+                        <label for="contactChoice2">Середня</label>
+                    <input class="size" data-info="100" type="radio" id="sizeChoice3" name="size" value="large">
+                        <label for="contactChoice3">Велика</label>
+                </div>
+                <div class="size-pizza">
+                    <img id="gate" class="droppable" src="Pizza_pictures/klassicheskij-bortik_1556622914630.png" alt="Корж класичний">
+                </div>
             </div>
             <div class="ingridients">
                 <h2>Соуси:</h2>
-                <div show-info="sous-klassicheskij"><img src="Pizza_pictures/sous-klassicheskij_1557758736353.png" alt=""></div>
-                <div show-info="sous-bbq"><img src="Pizza_pictures/sous-bbq_155679418013.png" alt=""></div>
-                <div show-info="sous-rikotta"><img src="Pizza_pictures/sous-rikotta_1556623391103.png" alt=""></div>
+                <div class="ball sous" data-info="10"><img src="Pizza_pictures/sous-klassicheskij_1557758736353.png" alt=""></div>
+                <div class="ball sous" data-info="10"><img src="Pizza_pictures/sous-bbq_155679418013.png" alt=""></div>
+                <div class="ball sous" data-info="10"><img src="Pizza_pictures/sous-rikotta_1556623391103.png" alt=""></div>
                 <h2>Топінги:</h2>
-                <div class=""><img src="Pizza_pictures/mocarela_1556623220308.png" alt=""></div>
-                <div class=""><img src="Pizza_pictures/mocarela_1556785182818.png" alt=""></div>
-                <div class=""><img src="Pizza_pictures/mocarela_1556785198489.png" alt=""></div>
-                <div class=""><img src="Pizza_pictures/telyatina_1556624025747.png" alt=""></div>
-                <div class=""><img src="Pizza_pictures/vetchina.png" alt=""></div>
-                <div class=""><img src="Pizza_pictures/vetchina_1556623556129.png" alt=""></div>
+                <div class="topping" data-info="15"><img src="Pizza_pictures/mocarela_1556623220308.png" alt=""></div>
+                <div class="topping" data-info="15"><img src="Pizza_pictures/mocarela_1556785182818.png" alt=""></div>
+                <div class="topping" data-info="15"><img src="Pizza_pictures/mocarela_1556785198489.png" alt=""></div>
+                <div class="topping" data-info="20"><img src="Pizza_pictures/telyatina_1556624025747.png" alt=""></div>
+                <div class="topping" data-info="25"><img src="Pizza_pictures/vetchina.png" alt=""></div>
+                <div class="topping" data-info="25"><img src="Pizza_pictures/vetchina_1556623556129.png" alt=""></div>
             </div>
+        </div>
+        <div class="price">
+            <h2>Сума до сплати:</h2>
         </div>
     </main>
     <footer>
@@ -67,6 +80,7 @@
         </form>
         <address>© 2002–2020 Мережа піцерій Papa Carlo!</address>
     </footer>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
