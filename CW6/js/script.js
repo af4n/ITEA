@@ -28,4 +28,5 @@ window.addEventListener("DOMContentLoaded", (e) => {
             document.querySelector('.price > h2').innerHTML += size.dataset.info;
         })
     };
+
 });

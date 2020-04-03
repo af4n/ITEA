@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Піцерія Папа Карло</title>
-    <link rel="stylesheet" href="Styles/styles.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
     <header>
         <div>
-            <a href="index.html"><img src="Pizza_pictures/Carlo.png" alt="Логотип Папа Карло"></a>
+            <a href="index.html"><img src="img/Carlo.png" alt="Логотип Папа Карло"></a>
         </div>
         <div class="wrapper">
             <div class="nav-1">
@@ -46,21 +46,21 @@
                         <label for="contactChoice3">Велика</label>
                 </div>
                 <div class="size-pizza">
-                    <img id="gate" class="droppable" src="Pizza_pictures/klassicheskij-bortik_1556622914630.png" alt="Корж класичний">
+                    <img id="gate" class="droppable" src="img/klassicheskij-bortik_1556622914630.png" alt="Корж класичний">
                 </div>
             </div>
             <div class="ingridients">
                 <h2>Соуси:</h2>
-                <div class="ball sous" data-info="10"><img src="Pizza_pictures/sous-klassicheskij_1557758736353.png" alt=""></div>
-                <div class="ball sous" data-info="10"><img src="Pizza_pictures/sous-bbq_155679418013.png" alt=""></div>
-                <div class="ball sous" data-info="10"><img src="Pizza_pictures/sous-rikotta_1556623391103.png" alt=""></div>
+                <div class="ball sous" data-info="10"><img src="img/sous-klassicheskij_1557758736353.png" alt=""></div>
+                <div class="ball sous" data-info="10"><img src="img/sous-bbq_155679418013.png" alt=""></div>
+                <div class="ball sous" data-info="10"><img src="img/sous-rikotta_1556623391103.png" alt=""></div>
                 <h2>Топінги:</h2>
-                <div class="topping" data-info="15"><img src="Pizza_pictures/mocarela_1556623220308.png" alt=""></div>
-                <div class="topping" data-info="15"><img src="Pizza_pictures/mocarela_1556785182818.png" alt=""></div>
-                <div class="topping" data-info="15"><img src="Pizza_pictures/mocarela_1556785198489.png" alt=""></div>
-                <div class="topping" data-info="20"><img src="Pizza_pictures/telyatina_1556624025747.png" alt=""></div>
-                <div class="topping" data-info="25"><img src="Pizza_pictures/vetchina.png" alt=""></div>
-                <div class="topping" data-info="25"><img src="Pizza_pictures/vetchina_1556623556129.png" alt=""></div>
+                <div class="topping" data-info="15"><img src="img/mocarela_1556623220308.png" alt=""></div>
+                <div class="topping" data-info="15"><img src="img/mocarela_1556785182818.png" alt=""></div>
+                <div class="topping" data-info="15"><img src="img/mocarela_1556785198489.png" alt=""></div>
+                <div class="topping" data-info="20"><img src="img/telyatina_1556624025747.png" alt=""></div>
+                <div class="topping" data-info="25"><img src="img/vetchina.png" alt=""></div>
+                <div class="topping" data-info="25"><img src="img/vetchina_1556623556129.png" alt=""></div>
             </div>
         </div>
         <div class="price">
@@ -68,19 +68,24 @@
         </div>
     </main>
     <footer>
-        <form action="">
-            <label for="name">Ваше ім'я</label>
-            <input name="name" type="text">
-            <label for="phone">Номер телефону</label>
-            <input name="phone" type="tel">
-            <label for="email">Електронна пошта</label>
-            <input name="email" type="email">
-            <input type="reset" value="Зкинути">
-            <input type="submit" value="Підтвердити замовлення">
-        </form>
+        <div class="form-container">
+            <form action="http://papacarlo.zzz.com.ua/b0.php" method="POST" target="_blank" name="f1">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" name="name1">
+                <label for="phone">Номер телефону</label>
+                <input type="tel" name="tel" value="">
+                <label for="email">Електронна пошта</label>
+                <input type="email" name="email1">
+                <input type="reset" value="Зкинути">
+                <input type="submit" name="sab" value="Підтвердити замовлення">
+            </form>
+        </div>
+        
         <address>© 2002–2020 Мережа піцерій Papa Carlo!</address>
     </footer>
-    <script src="./js/script.js"></script>
+
+    <script src="js/script.js"></script>
+    
 </body>
 
 </html>
